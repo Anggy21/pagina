@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #FFE5C5;
+
+}
+
+.img-yo{
+    width: 200px;
+    height: 200px;
+}
+
+/*header*/
+header{
+    display: flex;
+    background-color: #B48EFA;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+    position: sticky;
+}
+
+header nav ul{
+    display: flex;
+    gap: 2em;
+}
+header nav ul a{
+    color: #46106E;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 18px;
+}
+.imagen-hilos{
+    width: 80px;
+    height: 80px;
+}
+
+/*Menú*/
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: #46106E;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul.menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+/*Main*/
+.section-1{
+    background-color: #e3b883;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    margin: 10px;
+}
+.section-2 img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+footer{
+    width: 100%;
+    background-color: #B48EFA;
+}
+.footer{
+    padding: 0.5em;
+}
+
+
+.things{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.section3-img{
+    width: 200px;
+    height: 250px;
+    border-radius: 20%;
+}
+
+/*media queries*/
+
+@media(max-width: 768px){
+    .section-1{
+        background-color: #e3b883;
+        border-radius: 5%;
+        height: 20%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+
+    .navbar{
+        height: 0vh;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #B48EFA;
+        text-align: center;
+
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+
+    .navbar{
+        position: absolute;
+        top: 80px;
+    }
+
+    .navbar ul.menu{
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+
+    .navbar ul.menu a:hover{
+        color: aqua;
+    }
+
+    /*ACTIVE*/
+    .navbar.active{
+        height: 100vh;
+    }
+
+    .navbar.active ul.menu{
+        opacity: 1;
+    }
+}
